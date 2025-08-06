@@ -34,11 +34,6 @@
           "path": "src/v0/globals.css",
           "type": "registry:file",
           "target": "app/globals.css"
-        },
-        {
-          "path": "src/components/ui/sonner.tsx",
-          "type": "registry:file",
-          "target": "components/ui/sonner.tsx"
         }
       ]
     },
@@ -773,9 +768,9 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/mvpblocks/3dglobe.registry.tsx",
+          "path": "src/components/mvpblocks/3dglobe.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/3dglobe.registry.tsx"
+          "target": "components/ui/mvpblocks/3dglobe.tsx"
         }
       ]
     },
@@ -794,9 +789,9 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/mvpblocks/app-hero.registry.tsx",
+          "path": "src/components/mvpblocks/app-hero.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/app-hero.registry.tsx"
+          "target": "components/ui/mvpblocks/app-hero.tsx"
         }
       ]
     },
@@ -815,9 +810,9 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/mvpblocks/card-flip.registry.tsx",
+          "path": "src/components/mvpblocks/card-flip.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/card-flip.registry.tsx"
+          "target": "components/ui/mvpblocks/card-flip.tsx"
         }
       ]
     },
@@ -836,9 +831,9 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/mvpblocks/circular-text.registry.tsx",
+          "path": "src/components/mvpblocks/circular-text.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/circular-text.registry.tsx"
+          "target": "components/ui/mvpblocks/circular-text.tsx"
         }
       ]
     },
@@ -859,7 +854,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -880,7 +875,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -901,7 +896,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -922,7 +917,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -943,7 +938,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -964,7 +959,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -985,7 +980,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -1006,7 +1001,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -1027,7 +1022,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -1048,7 +1043,7 @@
         {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -1062,14 +1057,9 @@
       ],
       "files": [
         {
-          "path": "src/v0/shell-layout.tsx",
+          "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx",
-          "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -1083,14 +1073,9 @@
       ],
       "files": [
         {
-          "path": "src/v0/shell-layout.tsx",
+          "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx",
-          "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-1.registry.tsx"
         }
       ]
     },
@@ -1104,14 +1089,9 @@
       ],
       "files": [
         {
-          "path": "src/v0/shell-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
           "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx",
           "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx"
+          "target": "components/ui/mvpblocks/batch-2.registry.tsx"
         }
       ]
     },
@@ -1256,18 +1236,9 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx",
-          "type": "registry:file",
-          "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx"
-        },
-        {
           "path": "src/components/mvpblocks/skeleton-card-1.tsx",
           "type": "registry:file",
-          "target": "components/ui/hfai/skeleton-card-1.tsx",
-          "rewrites": {
-            "@/lib/utils": "@/lib/utils",
-            "/lib/utils": "@/lib/utils"
-          }
+          "target": "components/ui/mvpblocks/skeleton-card-1.tsx"
         }
       ]
     }
