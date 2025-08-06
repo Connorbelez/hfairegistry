@@ -5,7 +5,7 @@ import { blank } from "@/app/demo/[name]/blocks/blank";
 import { dashboard } from "@/app/demo/[name]/blocks/dashboard";
 import { store } from "@/app/demo/[name]/blocks/store";
 
-// components
+ // components
 import { brandHeader } from "@/app/demo/[name]/components/brand-header";
 import { brandSidebar } from "@/app/demo/[name]/components/brand-sidebar";
 import { hero } from "@/app/demo/[name]/components/hero";
@@ -13,6 +13,9 @@ import { login } from "@/app/demo/[name]/components/login";
 import { logo } from "@/app/demo/[name]/components/logo";
 import { productGrid } from "@/app/demo/[name]/components/product-grid";
 import { promo } from "@/app/demo/[name]/components/promo";
+
+// mvpblocks (registry barrel)
+import * as mvpblocks from "@/app/demo/[name]/blocks/mvpblocks/index";
 
 // ui
 import { accordion } from "@/app/demo/[name]/ui/accordion";
@@ -91,4 +94,33 @@ export const demos: { [name: string]: Demo } = {
   tabs,
   "toggle-group": toggleGroup,
   tooltip,
+
+  // mvpblocks
+  // Map exported objects to route-safe, explicit keys that match registry.json item names.
+  "mvpblocks-3dglobe": (mvpblocks as any).globe3d ?? (mvpblocks as any).Globe3D ?? (mvpblocks as any).default,
+  "mvpblocks-app-hero": (mvpblocks as any).appHero ?? (mvpblocks as any).AppHero,
+  "mvpblocks-card-flip": (mvpblocks as any).cardFlip ?? (mvpblocks as any).CardFlip,
+  "mvpblocks-circular-text": (mvpblocks as any).circularText ?? (mvpblocks as any).CircularText,
+
+  "mvpblocks-code-block-1": (mvpblocks as any).codeBlock1,
+  "mvpblocks-contact-us-1": (mvpblocks as any).contactUs1,
+  "mvpblocks-delete-project": (mvpblocks as any).deleteProject,
+  "mvpblocks-designer-pricing": (mvpblocks as any).designerPricing,
+  "mvpblocks-feature-steps": (mvpblocks as any).feature2,
+  "mvpblocks-globe1": (mvpblocks as any).globe1,
+  "mvpblocks-glow-card": (mvpblocks as any).glowCard,
+  "mvpblocks-gradient-bars-preview": (mvpblocks as any).gradientBarsPreview,
+  "mvpblocks-login-form-3": (mvpblocks as any).loginForm3,
+  "mvpblocks-notebook-hero": (mvpblocks as any).notebookHero,
+
+  "mvpblocks-pricing-2": (mvpblocks as any).pricing2,
+  "mvpblocks-pricing-3": (mvpblocks as any).pricing3,
+  "mvpblocks-pricing-4": (mvpblocks as any).pricing4,
+  "mvpblocks-pricing-5": (mvpblocks as any).pricing5,
+  "mvpblocks-pricing-with-modals": (mvpblocks as any).pricingWithModals,
+  "mvpblocks-retro-card": (mvpblocks as any).retroCard,
+  "mvpblocks-signin-modal": (mvpblocks as any).signinModal,
+  "mvpblocks-signup-modal": (mvpblocks as any).signupModal,
+  "mvpblocks-simple-pricing": (mvpblocks as any).simplePricing,
+  "mvpblocks-skeleton-card-1": (mvpblocks as any).skeletonCard1,
 };

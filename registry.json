@@ -748,6 +748,270 @@
           "target": "app/layout.tsx"
         }
       ]
+    },
+    {
+      "name": "mvpblocks-3dglobe",
+      "type": "registry:block",
+      "title": "MVPBlocks: 3D Globe",
+      "description": "Hero section with 3D globe imagery.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/3dglobe.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/3dglobe.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-app-hero",
+      "type": "registry:block",
+      "title": "MVPBlocks: App Hero",
+      "description": "Animated landing hero section.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/app-hero.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/app-hero.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-card-flip",
+      "type": "registry:block",
+      "title": "MVPBlocks: Card Flip",
+      "description": "Interactive 3D card flip component.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/card-flip.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/card-flip.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-circular-text",
+      "type": "registry:block",
+      "title": "MVPBlocks: Circular Text",
+      "description": "Animated circular text showcase.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/circular-text.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/circular-text.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-code-block-1",
+      "type": "registry:block",
+      "title": "MVPBlocks: Code Block 1",
+      "description": "Decorative code block with animated border.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-contact-us-1",
+      "type": "registry:block",
+      "title": "MVPBlocks: Contact Us 1",
+      "description": "Contact form with animated globe.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-delete-project",
+      "type": "registry:block",
+      "title": "MVPBlocks: Delete Project",
+      "description": "Confirmation dialog requiring typed project name.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-designer-pricing",
+      "type": "registry:block",
+      "title": "MVPBlocks: Designer Pricing",
+      "description": "Designer-styled pricing tables.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-feature-steps",
+      "type": "registry:block",
+      "title": "MVPBlocks: Feature Steps",
+      "description": "Four-step features with animated transitions.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-globe1",
+      "type": "registry:block",
+      "title": "MVPBlocks: Globe 1",
+      "description": "Simple globe hero with Earth shader.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-glow-card",
+      "type": "registry:block",
+      "title": "MVPBlocks: Glow Card",
+      "description": "CSS conic-gradient glowing card.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-gradient-bars-preview",
+      "type": "registry:block",
+      "title": "MVPBlocks: Gradient Bars",
+      "description": "Gradient bars with text reveal headline.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-login-form-3",
+      "type": "registry:block",
+      "title": "MVPBlocks: Login Form 3",
+      "description": "Full-screen brand login with features list.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-notebook-hero",
+      "type": "registry:block",
+      "title": "MVPBlocks: Notebook Hero",
+      "description": "Landing hero with gradient animations and CTA.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-1.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-pricing-2",
+      "type": "registry:block",
+      "title": "MVPBlocks: Pricing 2",
+      "description": "3-column pricing cards.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-pricing-3",
+      "type": "registry:block",
+      "title": "MVPBlocks: Pricing 3",
+      "description": "Split 2/3 featured pricing layout.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-pricing-4",
+      "type": "registry:block",
+      "title": "MVPBlocks: Pricing 4",
+      "description": "Enterprise pricing block with features and logos.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-pricing-5",
+      "type": "registry:block",
+      "title": "MVPBlocks: Pricing 5",
+      "description": "Four-tier pricing with animated tabs and background.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-pricing-with-modals",
+      "type": "registry:block",
+      "title": "MVPBlocks: Pricing with Modals",
+      "description": "Pricing cards with purchase modals.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-retro-card",
+      "type": "registry:block",
+      "title": "MVPBlocks: Retro Card",
+      "description": "Retro-styled article card with bold borders.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-signin-modal",
+      "type": "registry:block",
+      "title": "MVPBlocks: Signin Modal",
+      "description": "Sign-in modal with email/password and OAuth button.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-signup-modal",
+      "type": "registry:block",
+      "title": "MVPBlocks: Signup Modal",
+      "description": "Sign-up modal with basic fields and OAuth button.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-simple-pricing",
+      "type": "registry:block",
+      "title": "MVPBlocks: Simple Pricing",
+      "description": "Simple pricing with plan tabs and animations.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
+    },
+    {
+      "name": "mvpblocks-skeleton-card-1",
+      "type": "registry:block",
+      "title": "MVPBlocks: Skeleton Card 1",
+      "description": "Loading skeleton card with shimmer placeholders.",
+      "registryDependencies": ["https://registry-starter.vercel.app/r/theme.json"],
+      "files": [
+        { "path": "src/v0/shell-layout.tsx", "type": "registry:file", "target": "app/layout.tsx" },
+        { "path": "src/app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx", "type": "registry:file", "target": "app/demo/[name]/blocks/mvpblocks/batch-2.registry.tsx" }
+      ]
     }
   ]
 }
