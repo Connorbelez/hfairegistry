@@ -1,8 +1,6 @@
-'use client';
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import NumberFlow from '@number-flow/react';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+"use client";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -10,73 +8,75 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
-import { cn } from '@/lib/utils';
-import { Sparkles, ArrowRight, Check, Star, Zap, Shield } from 'lucide-react';
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+} from "@/components/ui/card";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { cn } from "@/lib/utils";
+import NumberFlow from "@number-flow/react";
+import { motion } from "framer-motion";
+import { ArrowRight, Check, Shield, Sparkles, Star, Zap } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const plans = [
   {
-    id: 'hobby',
-    name: 'Hobby',
+    id: "hobby",
+    name: "Hobby",
     icon: Star,
     price: {
-      monthly: 'Free forever',
-      yearly: 'Free forever',
+      monthly: "Free forever",
+      yearly: "Free forever",
     },
     description:
-      'The perfect starting place for your web app or personal project.',
+      "The perfect starting place for your web app or personal project.",
     features: [
-      '50 API calls / month',
-      '60 second checks',
-      'Single-user account',
-      '5 monitors',
-      'Basic email support',
+      "50 API calls / month",
+      "60 second checks",
+      "Single-user account",
+      "5 monitors",
+      "Basic email support",
     ],
-    cta: 'Get started for free',
+    cta: "Get started for free",
   },
   {
-    id: 'pro',
-    name: 'Pro',
+    id: "pro",
+    name: "Pro",
     icon: Zap,
     price: {
       monthly: 90,
       yearly: 75,
     },
-    description: 'Everything you need to build and scale your business.',
+    description: "Everything you need to build and scale your business.",
     features: [
-      'Unlimited API calls',
-      '30 second checks',
-      'Multi-user account',
-      '10 monitors',
-      'Priority email support',
+      "Unlimited API calls",
+      "30 second checks",
+      "Multi-user account",
+      "10 monitors",
+      "Priority email support",
     ],
-    cta: 'Subscribe to Pro',
+    cta: "Subscribe to Pro",
     popular: true,
   },
   {
-    id: 'enterprise',
-    name: 'Enterprise',
+    id: "enterprise",
+    name: "Enterprise",
     icon: Shield,
     price: {
-      monthly: 'Get in touch for pricing',
-      yearly: 'Get in touch for pricing',
+      monthly: "Get in touch for pricing",
+      yearly: "Get in touch for pricing",
     },
-    description: 'Critical security, performance, observability and support.',
+    description: "Critical security, performance, observability and support.",
     features: [
-      'You can DDOS our API.',
-      'Nano-second checks.',
-      'Invite your extended family.',
-      'Unlimited monitors.',
+      "You can DDOS our API.",
+      "Nano-second checks.",
+      "Invite your extended family.",
+      "Unlimited monitors.",
       "We'll sit on your desk.",
     ],
-    cta: 'Contact us',
+    cta: "Contact us",
   },
 ];
 
 export default function SimplePricing() {
-  const [frequency, setFrequency] = useState<string>('monthly');
+  const [frequency, setFrequency] = useState<string>("monthly");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -87,26 +87,26 @@ export default function SimplePricing() {
 
   return (
     <div className="not-prose relative flex w-full flex-col gap-16 overflow-hidden px-4 py-24 text-center sm:px-8">
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="bg-primary/10 absolute -top-[10%] left-[50%] h-[40%] w-[60%] -translate-x-1/2 rounded-full blur-3xl" />
-        <div className="bg-primary/5 absolute -right-[10%] -bottom-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
-        <div className="bg-primary/5 absolute -bottom-[10%] -left-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
+      <div className="-z-10 absolute inset-0 overflow-hidden">
+        <div className="-top-[10%] -translate-x-1/2 absolute left-[50%] h-[40%] w-[60%] rounded-full bg-primary/10 blur-3xl" />
+        <div className="-right-[10%] -bottom-[10%] absolute h-[40%] w-[40%] rounded-full bg-primary/5 blur-3xl" />
+        <div className="-bottom-[10%] -left-[10%] absolute h-[40%] w-[40%] rounded-full bg-primary/5 blur-3xl" />
       </div>
 
       <div className="flex flex-col items-center justify-center gap-8">
         <div className="flex flex-col items-center space-y-2">
           <Badge
             variant="outline"
-            className="border-primary/20 bg-primary/5 mb-4 rounded-full px-4 py-1 text-sm font-medium"
+            className="mb-4 rounded-full border-primary/20 bg-primary/5 px-4 py-1 font-medium text-sm"
           >
-            <Sparkles className="text-primary mr-1 h-3.5 w-3.5 animate-pulse" />
+            <Sparkles className="mr-1 h-3.5 w-3.5 animate-pulse text-primary" />
             Pricing Plans
           </Badge>
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="from-foreground to-foreground/30 bg-gradient-to-b bg-clip-text text-4xl font-bold text-transparent sm:text-5xl"
+            className="bg-gradient-to-b from-foreground to-foreground/30 bg-clip-text font-bold text-4xl text-transparent sm:text-5xl"
           >
             Pick the perfect plan for your needs
           </motion.h1>
@@ -114,7 +114,7 @@ export default function SimplePricing() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-muted-foreground max-w-md pt-2 text-lg"
+            className="max-w-md pt-2 text-lg text-muted-foreground"
           >
             Simple, transparent pricing that scales with your business. No
             hidden fees, no surprises.
@@ -129,23 +129,23 @@ export default function SimplePricing() {
           <Tabs
             defaultValue={frequency}
             onValueChange={setFrequency}
-            className="bg-muted/30 inline-block rounded-full p-1 shadow-sm"
+            className="inline-block rounded-full bg-muted/30 p-1 shadow-sm"
           >
             <TabsList className="bg-transparent">
               <TabsTrigger
                 value="monthly"
-                className="data-[state=active]:bg-background rounded-full transition-all duration-300 data-[state=active]:shadow-sm"
+                className="rounded-full transition-all duration-300 data-[state=active]:bg-background data-[state=active]:shadow-sm"
               >
                 Monthly
               </TabsTrigger>
               <TabsTrigger
                 value="yearly"
-                className="data-[state=active]:bg-background rounded-full transition-all duration-300 data-[state=active]:shadow-sm"
+                className="rounded-full transition-all duration-300 data-[state=active]:bg-background data-[state=active]:shadow-sm"
               >
                 Yearly
                 <Badge
                   variant="secondary"
-                  className="bg-primary/10 text-primary hover:bg-primary/15 ml-2"
+                  className="ml-2 bg-primary/10 text-primary hover:bg-primary/15"
                 >
                   20% off
                 </Badge>
@@ -166,38 +166,38 @@ export default function SimplePricing() {
             >
               <Card
                 className={cn(
-                  'bg-secondary/20 relative h-full w-full text-left transition-all duration-300 hover:shadow-lg',
+                  "relative h-full w-full bg-secondary/20 text-left transition-all duration-300 hover:shadow-lg",
                   plan.popular
-                    ? 'ring-primary/50 dark:shadow-primary/10 shadow-md ring-2'
-                    : 'hover:border-primary/30',
+                    ? "shadow-md ring-2 ring-primary/50 dark:shadow-primary/10"
+                    : "hover:border-primary/30",
                   plan.popular &&
-                    'from-primary/[0.03] bg-gradient-to-b to-transparent',
+                    "bg-gradient-to-b from-primary/[0.03] to-transparent",
                 )}
               >
                 {plan.popular && (
-                  <div className="absolute -top-3 right-0 left-0 mx-auto w-fit">
-                    <Badge className="bg-primary text-primary-foreground rounded-full px-4 py-1 shadow-sm">
+                  <div className="-top-3 absolute right-0 left-0 mx-auto w-fit">
+                    <Badge className="rounded-full bg-primary px-4 py-1 text-primary-foreground shadow-sm">
                       <Sparkles className="mr-1 h-3.5 w-3.5" />
                       Popular
                     </Badge>
                   </div>
                 )}
-                <CardHeader className={cn('pb-4', plan.popular && 'pt-8')}>
+                <CardHeader className={cn("pb-4", plan.popular && "pt-8")}>
                   <div className="flex items-center gap-2">
                     <div
                       className={cn(
-                        'flex h-8 w-8 items-center justify-center rounded-full',
+                        "flex h-8 w-8 items-center justify-center rounded-full",
                         plan.popular
-                          ? 'bg-primary/10 text-primary'
-                          : 'bg-secondary text-foreground',
+                          ? "bg-primary/10 text-primary"
+                          : "bg-secondary text-foreground",
                       )}
                     >
                       <plan.icon className="h-4 w-4" />
                     </div>
                     <CardTitle
                       className={cn(
-                        'text-xl font-bold',
-                        plan.popular && 'text-primary',
+                        "font-bold text-xl",
+                        plan.popular && "text-primary",
                       )}
                     >
                       {plan.name}
@@ -208,16 +208,16 @@ export default function SimplePricing() {
                     <div className="pt-2">
                       {typeof plan.price[
                         frequency as keyof typeof plan.price
-                      ] === 'number' ? (
+                      ] === "number" ? (
                         <div className="flex items-baseline">
                           <NumberFlow
                             className={cn(
-                              'text-3xl font-bold',
-                              plan.popular ? 'text-primary' : 'text-foreground',
+                              "font-bold text-3xl",
+                              plan.popular ? "text-primary" : "text-foreground",
                             )}
                             format={{
-                              style: 'currency',
-                              currency: 'USD',
+                              style: "currency",
+                              currency: "USD",
                               maximumFractionDigits: 0,
                             }}
                             value={
@@ -226,15 +226,15 @@ export default function SimplePricing() {
                               ] as number
                             }
                           />
-                          <span className="text-muted-foreground ml-1 text-sm">
+                          <span className="ml-1 text-muted-foreground text-sm">
                             /month, billed {frequency}
                           </span>
                         </div>
                       ) : (
                         <span
                           className={cn(
-                            'text-2xl font-bold',
-                            plan.popular ? 'text-primary' : 'text-foreground',
+                            "font-bold text-2xl",
+                            plan.popular ? "text-primary" : "text-foreground",
                           )}
                         >
                           {plan.price[frequency as keyof typeof plan.price]}
@@ -254,10 +254,10 @@ export default function SimplePricing() {
                     >
                       <div
                         className={cn(
-                          'flex h-5 w-5 items-center justify-center rounded-full',
+                          "flex h-5 w-5 items-center justify-center rounded-full",
                           plan.popular
-                            ? 'bg-primary/10 text-primary'
-                            : 'bg-secondary text-secondary-foreground',
+                            ? "bg-primary/10 text-primary"
+                            : "bg-secondary text-secondary-foreground",
                         )}
                       >
                         <Check className="h-3.5 w-3.5" />
@@ -265,8 +265,8 @@ export default function SimplePricing() {
                       <span
                         className={
                           plan.popular
-                            ? 'text-foreground'
-                            : 'text-muted-foreground'
+                            ? "text-foreground"
+                            : "text-muted-foreground"
                         }
                       >
                         {feature}
@@ -276,12 +276,12 @@ export default function SimplePricing() {
                 </CardContent>
                 <CardFooter>
                   <Button
-                    variant={plan.popular ? 'default' : 'outline'}
+                    variant={plan.popular ? "default" : "outline"}
                     className={cn(
-                      'w-full font-medium transition-all duration-300',
+                      "w-full font-medium transition-all duration-300",
                       plan.popular
-                        ? 'bg-primary hover:bg-primary/90 hover:shadow-primary/20 hover:shadow-md'
-                        : 'hover:border-primary/30 hover:bg-primary/5 hover:text-primary',
+                        ? "bg-primary hover:bg-primary/90 hover:shadow-md hover:shadow-primary/20"
+                        : "hover:border-primary/30 hover:bg-primary/5 hover:text-primary",
                     )}
                   >
                     {plan.cta}
@@ -292,11 +292,11 @@ export default function SimplePricing() {
                 {/* Subtle gradient effects */}
                 {plan.popular ? (
                   <>
-                    <div className="from-primary/[0.05] pointer-events-none absolute right-0 bottom-0 left-0 h-1/2 rounded-b-lg bg-gradient-to-t to-transparent" />
-                    <div className="border-primary/20 pointer-events-none absolute inset-0 rounded-lg border" />
+                    <div className="pointer-events-none absolute right-0 bottom-0 left-0 h-1/2 rounded-b-lg bg-gradient-to-t from-primary/[0.05] to-transparent" />
+                    <div className="pointer-events-none absolute inset-0 rounded-lg border border-primary/20" />
                   </>
                 ) : (
-                  <div className="hover:border-primary/10 pointer-events-none absolute inset-0 rounded-lg border border-transparent opacity-0 transition-opacity duration-300 hover:opacity-100" />
+                  <div className="pointer-events-none absolute inset-0 rounded-lg border border-transparent opacity-0 transition-opacity duration-300 hover:border-primary/10 hover:opacity-100" />
                 )}
               </Card>
             </motion.div>

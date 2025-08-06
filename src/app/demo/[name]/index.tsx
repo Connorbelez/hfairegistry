@@ -5,7 +5,7 @@ import { blank } from "@/app/demo/[name]/blocks/blank";
 import { dashboard } from "@/app/demo/[name]/blocks/dashboard";
 import { store } from "@/app/demo/[name]/blocks/store";
 
- // components
+// components
 import { brandHeader } from "@/app/demo/[name]/components/brand-header";
 import { brandSidebar } from "@/app/demo/[name]/components/brand-sidebar";
 import { hero } from "@/app/demo/[name]/components/hero";
@@ -15,7 +15,8 @@ import { productGrid } from "@/app/demo/[name]/components/product-grid";
 import { promo } from "@/app/demo/[name]/components/promo";
 
 // mvpblocks (registry barrel)
-import * as mvpblocks from "@/app/demo/[name]/blocks/mvpblocks/index";
+// Note: this barrel only exports named registry objects (no default export)
+import * as mvpblocks from "@/app/demo/[name]/blocks/mvpblocks";
 
 // ui
 import { accordion } from "@/app/demo/[name]/ui/accordion";
@@ -97,11 +98,15 @@ export const demos: { [name: string]: Demo } = {
 
   // mvpblocks
   // Map exported objects to route-safe, explicit keys that match registry.json item names.
-  "mvpblocks-3dglobe": (mvpblocks as any).globe3d ?? (mvpblocks as any).Globe3D ?? (mvpblocks as any).default,
-  "mvpblocks-app-hero": (mvpblocks as any).appHero ?? (mvpblocks as any).AppHero,
-  "mvpblocks-card-flip": (mvpblocks as any).cardFlip ?? (mvpblocks as any).CardFlip,
-  "mvpblocks-circular-text": (mvpblocks as any).circularText ?? (mvpblocks as any).CircularText,
-
+  // These names must match the named exports coming from:
+  // - 3dglobe.registry.tsx => export const globe3d
+  // - app-hero.registry.tsx => export const appHero
+  // - card-flip.registry.tsx => export const cardFlip
+  // - circular-text.registry.tsx => export const circularText
+  "mvpblocks-3dglobe": (mvpblocks as any).globe3d,
+  "mvpblocks-app-hero": (mvpblocks as any).appHero,
+  "mvpblocks-card-flip": (mvpblocks as any).cardFlip,
+  "mvpblocks-circular-text": (mvpblocks as any).circularText,
   "mvpblocks-code-block-1": (mvpblocks as any).codeBlock1,
   "mvpblocks-contact-us-1": (mvpblocks as any).contactUs1,
   "mvpblocks-delete-project": (mvpblocks as any).deleteProject,

@@ -1,42 +1,42 @@
-import { PricingCard } from '@/components/ui/pricing-card';
+import { PricingCard } from "@/components/ui/pricing-card";
 
 const plans = [
   {
-    name: 'Starter',
+    name: "Starter",
     price: 15,
-    period: 'month',
+    period: "month",
     features: [
-      'Up to 10,000 data points per month',
-      'Email support',
-      'Community forum access',
-      'Cancel anytime',
+      "Up to 10,000 data points per month",
+      "Email support",
+      "Community forum access",
+      "Cancel anytime",
     ],
   },
   {
-    name: 'Pro',
+    name: "Pro",
     price: 40,
-    period: 'quarter',
+    period: "quarter",
     featured: true,
     features: [
-      'Advanced analytics dashboard',
-      'Customizable reports and charts',
-      'Real-time data tracking',
-      'Integration with third-party tools',
-      'Everything in Hobby Plan',
+      "Advanced analytics dashboard",
+      "Customizable reports and charts",
+      "Real-time data tracking",
+      "Integration with third-party tools",
+      "Everything in Hobby Plan",
     ],
   },
   {
-    name: 'Premium',
+    name: "Premium",
     price: 120,
-    period: 'year',
+    period: "year",
     features: [
-      'Unlimited data storage',
-      'Customizable dashboards',
-      'Advanced data segmentation',
-      'Real-time data processing',
-      'AI-powered insights and recommendations',
-      'Everything in Hobby Plan',
-      'Everything in Pro Plan',
+      "Unlimited data storage",
+      "Customizable dashboards",
+      "Advanced data segmentation",
+      "Real-time data processing",
+      "AI-powered insights and recommendations",
+      "Everything in Hobby Plan",
+      "Everything in Pro Plan",
     ],
   },
 ];
@@ -44,13 +44,13 @@ const plans = [
 export default function PricingPage() {
   return (
     <div className="relative min-h-screen w-full px-4 py-20">
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="bg-primary/5 absolute -top-[10%] -right-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
-        <div className="bg-primary/5 absolute -top-[10%] -left-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
+      <div className="-z-10 absolute inset-0 overflow-hidden">
+        <div className="-top-[10%] -right-[10%] absolute h-[40%] w-[40%] rounded-full bg-primary/5 blur-3xl" />
+        <div className="-top-[10%] -left-[10%] absolute h-[40%] w-[40%] rounded-full bg-primary/5 blur-3xl" />
       </div>
       <div className="mx-auto max-w-6xl space-y-12">
         <div className="space-y-4 text-center">
-          <h1 className="text-4xl font-bold">
+          <h1 className="font-bold text-4xl">
             Simple pricing for advanced people
           </h1>
           <p className="mx-auto max-w-2xl text-gray-400">

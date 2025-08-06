@@ -5,21 +5,21 @@ export default function CodeBlock() {
         <div className="code-border-anim" />
         <div className="rounded-xl bg-[radial-gradient(at_88%_40%,#181925_0,transparent_85%),radial-gradient(at_49%_30%,#181925_0,transparent_85%),radial-gradient(at_14%_26%,#181925_0,transparent_85%),radial-gradient(at_0%_64%,#015c6e_0,transparent_85%),radial-gradient(at_41%_94%,#00b7e9_0,transparent_85%),radial-gradient(at_100%_99%,#103a42_0,transparent_85%)] p-6 shadow-[0px_-16px_24px_0px_rgba(255,255,255,0.25)_inset]">
           <div className="flex items-center justify-between pb-4">
-            <span className="text-base font-semibold text-white">app.tsx</span>
-            <button className="rounded-full bg-[#1fcdfc] px-3 py-1.5 text-xs font-medium text-[#181925] transition hover:bg-[#00b7e9]">
+            <span className="font-semibold text-base text-white">app.tsx</span>
+            <button className="rounded-full bg-[#1fcdfc] px-3 py-1.5 font-medium text-[#181925] text-xs transition hover:bg-[#00b7e9]">
               Copy
             </button>
           </div>
-          <pre className="m-0 overflow-x-auto rounded-lg bg-transparent p-0 text-sm leading-relaxed whitespace-pre text-blue-100">
+          <pre className="m-0 overflow-x-auto whitespace-pre rounded-lg bg-transparent p-0 text-blue-100 text-sm leading-relaxed">
             <code>
-              <span className="text-[#1fcdfc]">import</span>{' '}
-              <span className="text-[#e0e0e0]">{'{'}</span>useState
-              <span className="text-[#e0e0e0]">{'}'}</span>{' '}
-              <span className="text-[#1fcdfc]">from</span>{' '}
+              <span className="text-[#1fcdfc]">import</span>{" "}
+              <span className="text-[#e0e0e0]">{"{"}</span>useState
+              <span className="text-[#e0e0e0]">{"}"}</span>{" "}
+              <span className="text-[#1fcdfc]">from</span>{" "}
               <span className="text-[#f7b731]">&apos;react&apos;</span>;<br />
               <br />
-              <span className="text-[#1fcdfc]">function</span>{' '}
-              <span className="text-[#ffd60a]">Counter</span>() {'{'}
+              <span className="text-[#1fcdfc]">function</span>{" "}
+              <span className="text-[#ffd60a]">Counter</span>() {"{"}
               <br />
               &nbsp;&nbsp;<span className="text-[#1fcdfc]">const</span> [count,
               setCount] = useState(<span className="text-[#f7b731]">0</span>);
@@ -27,21 +27,21 @@ export default function CodeBlock() {
               <br />
               &nbsp;&nbsp;<span className="text-[#1fcdfc]">return</span> (<br />
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <span className="text-[#ffd60a]">&lt;button</span>{' '}
+              <span className="text-[#ffd60a]">&lt;button</span>{" "}
               <span className="text-[#36ffb1]">onClick</span>=
-              <span className="text-[#f7b731]">{'{'}</span>() =&gt;
+              <span className="text-[#f7b731]">{"{"}</span>() =&gt;
               setCount(count + <span className="text-[#f7b731]">1</span>)
-              <span className="text-[#f7b731]">{'}'}</span>
+              <span className="text-[#f7b731]">{"}"}</span>
               <span className="text-[#ffd60a]">&gt;</span>
               <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clicked {'{'}count{'}'} times
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clicked {"{"}count{"}"} times
               <br />
               &nbsp;&nbsp;&nbsp;&nbsp;
               <span className="text-[#ffd60a]">&lt;/button&gt;</span>
               <br />
               &nbsp;&nbsp;);
               <br />
-              {'}'}
+              {"}"}
             </code>
           </pre>
         </div>

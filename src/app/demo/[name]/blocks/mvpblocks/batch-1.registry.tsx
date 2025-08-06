@@ -1,6 +1,10 @@
-/** This file aggregates multiple MVPBlocks registry exports. */
+import {
+  SandboxLayout,
+  SandboxPreview,
+  SandboxProvider,
+} from "@/components/ui/shadcn-io/sandbox";
 import React from "react";
-import { SandboxProvider, SandboxLayout, SandboxPreview } from "@/components/ui/shadcn-io/sandbox";
+/** This file aggregates multiple MVPBlocks registry exports. */
 
 // 1) code-block-1
 import CodeBlock from "@/components/mvpblocks/code-block-1";

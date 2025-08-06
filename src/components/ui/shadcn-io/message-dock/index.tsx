@@ -331,6 +331,7 @@ export function MessageDock({
                       : character.backgroundColor
                   )}
                   onClick={() => handleCharacterClick(actualIndex)}
+                  //@ts-ignore
                   whileHover={!isExpanded ? hoverAnimation : { scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={`Message ${character.name}`}

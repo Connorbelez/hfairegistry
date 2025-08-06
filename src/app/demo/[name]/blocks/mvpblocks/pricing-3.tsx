@@ -1,15 +1,15 @@
-import { Button } from '@/components/ui/button';
-import { Check } from 'lucide-react';
-import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+import Link from "next/link";
 
 // Pricing data
 type ButtonVariant =
-  | 'outline'
-  | 'default'
-  | 'link'
-  | 'destructive'
-  | 'secondary'
-  | 'ghost';
+  | "outline"
+  | "default"
+  | "link"
+  | "destructive"
+  | "secondary"
+  | "ghost";
 
 type Plan = {
   name: string;
@@ -23,35 +23,35 @@ type Plan = {
 
 const plans: Plan[] = [
   {
-    name: 'Free',
-    price: '$0 / mo',
-    description: 'Per editor',
+    name: "Free",
+    price: "$0 / mo",
+    description: "Per editor",
     features: [
-      'Basic Analytics Dashboard',
-      '5GB Cloud Storage',
-      'Email and Chat Support',
+      "Basic Analytics Dashboard",
+      "5GB Cloud Storage",
+      "Email and Chat Support",
     ],
-    buttonVariant: 'outline',
+    buttonVariant: "outline",
     span: 2,
     highlight: false,
   },
   {
-    name: 'Pro',
-    price: '$19 / mo',
-    description: 'Per editor',
+    name: "Pro",
+    price: "$19 / mo",
+    description: "Per editor",
     features: [
-      'Everything in Free Plan',
-      '5GB Cloud Storage',
-      'Email and Chat Support',
-      'Access to Community Forum',
-      'Single User Access',
-      'Access to Basic Templates',
-      'Mobile App Access',
-      '1 Custom Report Per Month',
-      'Monthly Product Updates',
-      'Standard Security Features',
+      "Everything in Free Plan",
+      "5GB Cloud Storage",
+      "Email and Chat Support",
+      "Access to Community Forum",
+      "Single User Access",
+      "Access to Basic Templates",
+      "Mobile App Access",
+      "1 Custom Report Per Month",
+      "Monthly Product Updates",
+      "Standard Security Features",
     ],
-    buttonVariant: 'default',
+    buttonVariant: "default",
     span: 3,
     highlight: true,
   },
@@ -60,14 +60,14 @@ const plans: Plan[] = [
 export default function PricingThree() {
   return (
     <section className="note-prose relative w-full py-16 md:py-32">
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="bg-primary/10 absolute -top-[10%] left-[50%] h-[40%] w-[60%] -translate-x-1/2 rounded-full blur-3xl" />
-        <div className="bg-primary/5 absolute -right-[10%] -bottom-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
-        <div className="bg-primary/5 absolute -bottom-[10%] -left-[10%] h-[40%] w-[40%] rounded-full blur-3xl" />
+      <div className="-z-10 absolute inset-0 overflow-hidden">
+        <div className="-top-[10%] -translate-x-1/2 absolute left-[50%] h-[40%] w-[60%] rounded-full bg-primary/10 blur-3xl" />
+        <div className="-right-[10%] -bottom-[10%] absolute h-[40%] w-[40%] rounded-full bg-primary/5 blur-3xl" />
+        <div className="-bottom-[10%] -left-[10%] absolute h-[40%] w-[40%] rounded-full bg-primary/5 blur-3xl" />
       </div>
       <div className="mx-auto max-w-5xl px-6">
         <div className="mx-auto max-w-2xl space-y-6 text-center">
-          <h1 className="text-center text-4xl font-semibold lg:text-5xl">
+          <h1 className="text-center font-semibold text-4xl lg:text-5xl">
             Pricing that Scales with You
           </h1>
           <p>
@@ -83,15 +83,15 @@ export default function PricingThree() {
               key={index}
               className={`flex flex-col justify-between space-y-8 rounded-(--radius) border p-6 lg:p-10 ${
                 plan.highlight
-                  ? 'dark:bg-muted shadow-lg shadow-gray-950/5 md:col-span-3 dark:[--color-muted:var(--color-zinc-900)]'
-                  : 'md:col-span-2 md:my-2 md:rounded-r-none md:border-r-0'
+                  ? "shadow-gray-950/5 shadow-lg md:col-span-3 dark:bg-muted dark:[--color-muted:var(--color-zinc-900)]"
+                  : "md:col-span-2 md:my-2 md:rounded-r-none md:border-r-0"
               }`}
             >
               {/* Header */}
               <div className="space-y-4">
                 <div>
                   <h2 className="font-medium">{plan.name}</h2>
-                  <span className="my-3 block text-2xl font-semibold">
+                  <span className="my-3 block font-semibold text-2xl">
                     {plan.price}
                   </span>
                   <p className="text-muted-foreground text-sm">
@@ -110,7 +110,7 @@ export default function PricingThree() {
               {/* Features */}
               {plan.highlight ? (
                 <div>
-                  <div className="text-sm font-medium">
+                  <div className="font-medium text-sm">
                     Everything in free plus:
                   </div>
                   <ul className="mt-4 list-outside space-y-3 text-sm">

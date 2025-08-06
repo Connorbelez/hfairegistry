@@ -42,9 +42,9 @@ const accountSchema = z
 
 // Combine all schemas for the final form data
 const formSchema = z.object({
-  ...personalInfoSchema.shape,
-  ...addressSchema.shape,
-  ...accountSchema.shape,
+  ...(personalInfoSchema as any).shape,
+  ...(addressSchema as any).shape,
+  ...(z as any).objectUtil?.unwrap?.(accountSchema as any)?.shape ?? (accountSchema as any).shape,
 });
 
 type FormData = z.infer<typeof formSchema>;

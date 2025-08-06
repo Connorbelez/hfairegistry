@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { easeInOut, motion, spring } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
+import { easeInOut, motion, spring } from "framer-motion";
 import {
   ArrowRight,
+  ArrowUpRight,
   Database,
   Sparkles,
   Zap,
-  ArrowUpRight,
-} from 'lucide-react';
+} from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function AppHero() {
   // State for animated counters
@@ -73,7 +73,7 @@ export default function AppHero() {
     y: [0, -10, 0],
     transition: {
       duration: 4,
-      repeat: Infinity,
+      repeat: Number.POSITIVE_INFINITY,
       ease: easeInOut,
     },
   };
@@ -83,8 +83,8 @@ export default function AppHero() {
     rotate: 360,
     transition: {
       duration: 20,
-      repeat: Infinity,
-      ease: 'linear',
+      repeat: Number.POSITIVE_INFINITY,
+      ease: "linear",
     },
   };
 
@@ -94,7 +94,7 @@ export default function AppHero() {
     scale: [1, 1.05, 1],
     transition: {
       duration: 3,
-      repeat: Infinity,
+      repeat: Number.POSITIVE_INFINITY,
       ease: easeInOut,
     },
   };
@@ -119,14 +119,14 @@ export default function AppHero() {
     opacity: [0.9, 1, 0.9],
     transition: {
       duration: 2,
-      repeat: Infinity,
-      ease: 'easeInOut',
+      repeat: Number.POSITIVE_INFINITY,
+      ease: "easeInOut",
     },
   };
 
   return (
     <section className="relative flex min-h-screen w-full flex-col items-center overflow-hidden bg-black py-16 text-white sm:px-6 lg:px-8 lg:py-2">
-      <div className="absolute inset-0 z-0 h-full w-full rotate-180 items-center px-5 py-24 opacity-80 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+      <div className="absolute inset-0 z-0 h-full w-full rotate-180 items-center px-5 py-24 opacity-80 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]" />
       <svg
         id="noice"
         className="absolute inset-0 z-10 h-full w-full opacity-30"
@@ -137,13 +137,13 @@ export default function AppHero() {
             baseFrequency="1.34"
             numOctaves="4"
             stitchTiles="stitch"
-          ></feTurbulence>
-          <feColorMatrix type="saturate" values="0"></feColorMatrix>
+          />
+          <feColorMatrix type="saturate" values="0" />
           <feComponentTransfer>
-            <feFuncR type="linear" slope="0.46"></feFuncR>
-            <feFuncG type="linear" slope="0.46"></feFuncG>
-            <feFuncB type="linear" slope="0.47"></feFuncB>
-            <feFuncA type="linear" slope="0.37"></feFuncA>
+            <feFuncR type="linear" slope="0.46" />
+            <feFuncG type="linear" slope="0.46" />
+            <feFuncB type="linear" slope="0.47" />
+            <feFuncA type="linear" slope="0.37" />
           </feComponentTransfer>
           <feComponentTransfer>
             <feFuncR type="linear" slope="1.47" intercept="-0.23" />
@@ -151,29 +151,29 @@ export default function AppHero() {
             <feFuncB type="linear" slope="1.47" intercept="-0.23" />
           </feComponentTransfer>
         </filter>
-        <rect width="100%" height="100%" filter="url(#noise-filter)"></rect>
+        <rect width="100%" height="100%" filter="url(#noise-filter)" />
       </svg>
       {/* Background effects */}
       <div className="absolute inset-0 z-0">
         {/* Radial gradient */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900/30 via-black/70 to-gray-950 blur-3xl"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900/30 via-black/70 to-gray-950 blur-3xl" />
 
         {/* Grid pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.22)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.22)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
         </div>
 
         {/* Enhanced glow spots */}
-        <div className="absolute top-20 -left-20 h-60 w-60 rounded-full bg-purple-600/20 blur-[100px]"></div>
-        <div className="absolute -right-20 bottom-20 h-60 w-60 rounded-full bg-blue-600/20 blur-[100px]"></div>
+        <div className="-left-20 absolute top-20 h-60 w-60 rounded-full bg-purple-600/20 blur-[100px]" />
+        <div className="-right-20 absolute bottom-20 h-60 w-60 rounded-full bg-blue-600/20 blur-[100px]" />
         <motion.div
           animate={glowAnimation}
           className="absolute top-1/3 left-1/4 h-40 w-40 rounded-full bg-indigo-500/10 blur-[80px]"
-        ></motion.div>
+        />
         <motion.div
           animate={glowAnimation}
           className="absolute right-1/4 bottom-1/3 h-40 w-40 rounded-full bg-purple-500/10 blur-[80px]"
-        ></motion.div>
+        />
 
         {/* Particle effects - subtle dots */}
         <div className="absolute inset-0 opacity-20">
@@ -191,8 +191,8 @@ export default function AppHero() {
               }}
               transition={{
                 duration: 3 + Math.random() * 2,
-                repeat: Infinity,
-                ease: 'easeInOut',
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
                 delay: Math.random() * 2,
               }}
             />
@@ -200,7 +200,7 @@ export default function AppHero() {
         </div>
       </div>
 
-      <div className="fadein-blur relative z-0 mx-auto mb-10 h-[300px] w-[300px] lg:absolute lg:top-1/2 lg:right-1/2 lg:mx-0 lg:mb-0 lg:h-[500px] lg:w-[500px] lg:translate-x-1/2 lg:-translate-y-2/3">
+      <div className="fadein-blur lg:-translate-y-2/3 relative z-0 mx-auto mb-10 h-[300px] w-[300px] lg:absolute lg:top-1/2 lg:right-1/2 lg:mx-0 lg:mb-0 lg:h-[500px] lg:w-[500px] lg:translate-x-1/2">
         <img
           src="https://blocks.mvp-subha.me/Adobe Express - file(1).png"
           alt="Nexus Platform 3D Visualization"
@@ -208,11 +208,11 @@ export default function AppHero() {
         />
         <motion.div
           variants={tooltipVariants}
-          className="absolute top-4 -left-4 rounded-lg border border-purple-500/30 bg-black/80 p-2 backdrop-blur-md lg:top-1/4 lg:-left-20"
+          className="-left-4 lg:-left-20 absolute top-4 rounded-lg border border-purple-500/30 bg-black/80 p-2 backdrop-blur-md lg:top-1/4"
         >
           <div className="flex items-center gap-2">
             <Zap className="h-4 w-4 text-purple-400" />
-            <span className="text-xs font-medium text-purple-200">
+            <span className="font-medium text-purple-200 text-xs">
               High Performance
             </span>
           </div>
@@ -220,11 +220,11 @@ export default function AppHero() {
 
         <motion.div
           variants={tooltipVariants}
-          className="absolute top-1/2 -right-4 rounded-lg border border-blue-500/30 bg-black/80 p-2 backdrop-blur-md lg:-right-24"
+          className="-right-4 lg:-right-24 absolute top-1/2 rounded-lg border border-blue-500/30 bg-black/80 p-2 backdrop-blur-md"
         >
           <div className="flex items-center gap-2">
             <Database className="h-4 w-4 text-blue-400" />
-            <span className="text-xs font-medium text-blue-200">
+            <span className="font-medium text-blue-200 text-xs">
               Decentralized Storage
             </span>
           </div>
@@ -236,7 +236,7 @@ export default function AppHero() {
         >
           <div className="flex items-center gap-2">
             <Sparkles className="h-4 w-4 text-indigo-400" />
-            <span className="text-xs font-medium text-indigo-200">
+            <span className="font-medium text-indigo-200 text-xs">
               AI-Powered
             </span>
           </div>
@@ -254,9 +254,9 @@ export default function AppHero() {
           <div className="w-full lg:w-auto">
             <motion.div
               variants={itemVariants}
-              className="mb-4 inline-flex items-center rounded-full border border-purple-500/30 bg-purple-500/10 px-3 py-1 text-sm text-purple-300"
+              className="mb-4 inline-flex items-center rounded-full border border-purple-500/30 bg-purple-500/10 px-3 py-1 text-purple-300 text-sm"
             >
-              <span className="mr-2 rounded-full bg-purple-500 px-2 py-0.5 text-xs font-semibold text-white">
+              <span className="mr-2 rounded-full bg-purple-500 px-2 py-0.5 font-semibold text-white text-xs">
                 New
               </span>
               Introducing Nexus Platform
@@ -264,7 +264,7 @@ export default function AppHero() {
 
             <motion.h1
               variants={itemVariants}
-              className="mb-6 bg-gradient-to-r from-white/70 via-white to-slate-500/80 bg-clip-text text-3xl leading-tight text-transparent sm:text-4xl md:text-5xl lg:text-6xl"
+              className="mb-6 bg-gradient-to-r from-white/70 via-white to-slate-500/80 bg-clip-text text-3xl text-transparent leading-tight sm:text-4xl md:text-5xl lg:text-6xl"
             >
               The Bridge Between <br className="hidden sm:inline" />
               <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -278,22 +278,22 @@ export default function AppHero() {
               className="mb-6 flex flex-wrap justify-center gap-4 md:gap-6 lg:justify-start"
             >
               <div className="rounded-lg border border-purple-500/20 bg-black/40 px-4 py-2 backdrop-blur-sm">
-                <p className="text-2xl font-bold text-white">
+                <p className="font-bold text-2xl text-white">
                   {stats.users.toLocaleString()}+
                 </p>
-                <p className="text-xs text-gray-400">Active Users</p>
+                <p className="text-gray-400 text-xs">Active Users</p>
               </div>
               <div className="rounded-lg border border-blue-500/20 bg-black/40 px-4 py-2 backdrop-blur-sm">
-                <p className="text-2xl font-bold text-white">
+                <p className="font-bold text-2xl text-white">
                   {stats.transactions.toLocaleString()}+
                 </p>
-                <p className="text-xs text-gray-400">Transactions</p>
+                <p className="text-gray-400 text-xs">Transactions</p>
               </div>
               <div className="rounded-lg border border-indigo-500/20 bg-black/40 px-4 py-2 backdrop-blur-sm">
-                <p className="text-2xl font-bold text-white">
+                <p className="font-bold text-2xl text-white">
                   {stats.networks}+
                 </p>
-                <p className="text-xs text-gray-400">Networks</p>
+                <p className="text-gray-400 text-xs">Networks</p>
               </div>
             </motion.div>
 
@@ -302,23 +302,23 @@ export default function AppHero() {
               variants={itemVariants}
               className="mb-8 flex flex-wrap items-center justify-center gap-2 lg:justify-start"
             >
-              <span className="text-xs font-medium text-gray-400">
+              <span className="font-medium text-gray-400 text-xs">
                 Integrates with:
               </span>
-              <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm transition-all hover:bg-purple-950">
-                <div className="h-2 w-2 rounded-full bg-blue-400"></div>
+              <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 font-medium text-slate-300 text-xs backdrop-blur-sm transition-all hover:bg-purple-950">
+                <div className="h-2 w-2 rounded-full bg-blue-400" />
                 Ethereum
               </div>
-              <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm transition-all hover:bg-purple-950">
-                <div className="h-2 w-2 rounded-full bg-purple-400"></div>
+              <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 font-medium text-slate-300 text-xs backdrop-blur-sm transition-all hover:bg-purple-950">
+                <div className="h-2 w-2 rounded-full bg-purple-400" />
                 Solana
               </div>
-              <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm transition-all hover:bg-purple-950">
-                <div className="h-2 w-2 rounded-full bg-green-400"></div>
+              <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 font-medium text-slate-300 text-xs backdrop-blur-sm transition-all hover:bg-purple-950">
+                <div className="h-2 w-2 rounded-full bg-green-400" />
                 OpenAI
               </div>
-              <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm transition-all hover:bg-purple-950">
-                <div className="h-2 w-2 rounded-full bg-yellow-400"></div>
+              <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 font-medium text-slate-300 text-xs backdrop-blur-sm transition-all hover:bg-purple-950">
+                <div className="h-2 w-2 rounded-full bg-yellow-400" />
                 +5 more
               </div>
             </motion.div>
@@ -327,7 +327,7 @@ export default function AppHero() {
           <div className="mt-6 flex flex-col items-center lg:mt-0 lg:items-end">
             <motion.p
               variants={itemVariants}
-              className="mb-8 max-w-md px-6 text-center text-lg leading-relaxed text-slate-300/90 lg:text-end"
+              className="mb-8 max-w-md px-6 text-center text-lg text-slate-300/90 leading-relaxed lg:text-end"
             >
               Nexus connects AI tools with Web3 infrastructure, giving
               developers the power to build beyond limits. One platform. Endless
@@ -338,7 +338,7 @@ export default function AppHero() {
               className="mb-8 flex flex-col flex-wrap gap-4 sm:flex-row lg:justify-end"
             >
               <Button
-                className="group rounded-full border-t border-purple-400 bg-gradient-to-b from-purple-700 to-slate-950/80 px-6 py-6 text-white shadow-lg shadow-purple-600/20 transition-all hover:shadow-purple-600/40"
+                className="group rounded-full border-purple-400 border-t bg-gradient-to-b from-purple-700 to-slate-950/80 px-6 py-6 text-white shadow-lg shadow-purple-600/20 transition-all hover:shadow-purple-600/40"
                 size="lg"
               >
                 Start Building
@@ -359,18 +359,18 @@ export default function AppHero() {
               variants={itemVariants}
               className="mx-auto flex items-center gap-3 rounded-full border border-slate-800 bg-slate-900/50 px-3 py-1 backdrop-blur-sm lg:mx-0 lg:ml-auto"
             >
-              <div className="flex -space-x-2">
+              <div className="-space-x-2 flex">
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
                     className="h-6 w-6 overflow-hidden rounded-full border-2 border-slate-900 bg-slate-800"
                   >
-                    <div className="h-full w-full bg-gradient-to-br from-purple-500 to-blue-600 opacity-80"></div>
+                    <div className="h-full w-full bg-gradient-to-br from-purple-500 to-blue-600 opacity-80" />
                   </div>
                 ))}
               </div>
-              <span className="text-xs text-slate-300">
-                <span className="font-semibold text-white">500+</span>{' '}
+              <span className="text-slate-300 text-xs">
+                <span className="font-semibold text-white">500+</span>{" "}
                 developers already building
               </span>
               <ArrowUpRight className="h-3 w-3 text-purple-400" />
@@ -378,9 +378,9 @@ export default function AppHero() {
           </div>
         </motion.div>
       </motion.main>
-      <div className="absolute right-auto -bottom-40 left-1/2 h-96 w-20 -translate-x-1/2 -rotate-45 rounded-full bg-gray-200/30 blur-[80px] lg:right-96 lg:left-auto lg:translate-x-0"></div>
-      <div className="absolute right-auto -bottom-52 left-1/2 h-96 w-20 -translate-x-1/2 -rotate-45 rounded-full bg-gray-300/20 blur-[80px] lg:right-auto lg:left-auto lg:translate-x-0"></div>
-      <div className="absolute right-auto -bottom-60 left-1/2 h-96 w-10 -translate-x-20 -rotate-45 rounded-full bg-gray-300/20 blur-[80px] lg:right-96 lg:left-auto lg:-translate-x-40"></div>
+      <div className="-bottom-40 -translate-x-1/2 -rotate-45 absolute right-auto left-1/2 h-96 w-20 rounded-full bg-gray-200/30 blur-[80px] lg:right-96 lg:left-auto lg:translate-x-0" />
+      <div className="-bottom-52 -translate-x-1/2 -rotate-45 absolute right-auto left-1/2 h-96 w-20 rounded-full bg-gray-300/20 blur-[80px] lg:right-auto lg:left-auto lg:translate-x-0" />
+      <div className="-bottom-60 -translate-x-20 -rotate-45 lg:-translate-x-40 absolute right-auto left-1/2 h-96 w-10 rounded-full bg-gray-300/20 blur-[80px] lg:right-96 lg:left-auto" />
     </section>
   );
 }

@@ -1,46 +1,46 @@
-'use client';
+"use client";
 
-import { buttonVariants } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-import { ArrowRight } from 'lucide-react';
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
 
 export default function NotebookHero() {
   return (
     <div className="min-h-screen py-6 sm:py-14">
       <div className="pointer-events-none absolute inset-0 top-0 z-0 overflow-hidden">
-        <div className="absolute -top-20 -left-20 h-[600px] w-[600px] rounded-full bg-gradient-to-br from-rose-500/30 via-rose-500/20 to-transparent opacity-50 blur-[100px]" />
-        <div className="absolute -top-40 -right-20 h-[500px] w-[500px] rounded-full bg-gradient-to-bl from-red-500/30 via-red-500/20 to-transparent opacity-50 blur-[100px]" />
+        <div className="-top-20 -left-20 absolute h-[600px] w-[600px] rounded-full bg-gradient-to-br from-rose-500/30 via-rose-500/20 to-transparent opacity-50 blur-[100px]" />
+        <div className="-top-40 -right-20 absolute h-[500px] w-[500px] rounded-full bg-gradient-to-bl from-red-500/30 via-red-500/20 to-transparent opacity-50 blur-[100px]" />
         <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-amber-500/20 via-amber-500/10 to-transparent opacity-30 blur-[80px]" />
       </div>
 
-      <main className="relative container mt-4 max-w-[1100px] px-2 py-4 lg:py-8">
+      <main className="container relative mt-4 max-w-[1100px] px-2 py-4 lg:py-8">
         <div className="relative sm:overflow-hidden">
-          <div className="border-primary/20 bg-background/70 shadow-primary/10 relative flex flex-col items-start justify-start rounded-xl border px-4 pt-12 shadow-xl backdrop-blur-md max-md:text-center md:px-12 md:pt-16">
+          <div className="relative flex flex-col items-start justify-start rounded-xl border border-primary/20 bg-background/70 px-4 pt-12 shadow-primary/10 shadow-xl backdrop-blur-md max-md:text-center md:px-12 md:pt-16">
             <div
-              className="animate-gradient-x absolute inset-0 top-32 z-0 hidden blur-2xl dark:block"
+              className="absolute inset-0 top-32 z-0 hidden animate-gradient-x blur-2xl dark:block"
               style={{
                 maskImage:
-                  'linear-gradient(to bottom, transparent, white, transparent)',
+                  "linear-gradient(to bottom, transparent, white, transparent)",
                 background:
-                  'repeating-linear-gradient(65deg, hsl(var(--primary)), hsl(var(--primary)/0.8) 12px, color-mix(in oklab, hsl(var(--primary)) 30%, transparent) 20px, transparent 200px)',
-                backgroundSize: '200% 100%',
+                  "repeating-linear-gradient(65deg, hsl(var(--primary)), hsl(var(--primary)/0.8) 12px, color-mix(in oklab, hsl(var(--primary)) 30%, transparent) 20px, transparent 200px)",
+                backgroundSize: "200% 100%",
               }}
             />
             <div
-              className="animate-gradient-x absolute inset-0 top-32 z-0 text-left blur-2xl dark:hidden"
+              className="absolute inset-0 top-32 z-0 animate-gradient-x text-left blur-2xl dark:hidden"
               style={{
                 maskImage:
-                  'linear-gradient(to bottom, transparent, white, transparent)',
+                  "linear-gradient(to bottom, transparent, white, transparent)",
                 background:
-                  'repeating-linear-gradient(65deg, hsl(var(--primary)/0.9), hsl(var(--primary)/0.7) 12px, color-mix(in oklab, hsl(var(--primary)) 30%, transparent) 20px, transparent 200px)',
-                backgroundSize: '200% 100%',
+                  "repeating-linear-gradient(65deg, hsl(var(--primary)/0.9), hsl(var(--primary)/0.7) 12px, color-mix(in oklab, hsl(var(--primary)) 30%, transparent) 20px, transparent 200px)",
+                backgroundSize: "200% 100%",
               }}
             />
-            <h1 className="mb-4 flex flex-wrap gap-2 text-3xl leading-tight font-medium md:text-5xl">
+            <h1 className="mb-4 flex flex-wrap gap-2 font-medium text-3xl leading-tight md:text-5xl">
               Build <span className="text-primary">Beautiful UI</span> with
               MVPBlocks
             </h1>
-            <p className="text-muted-foreground mb-8 text-left md:max-w-[80%] md:text-xl">
+            <p className="mb-8 text-left text-muted-foreground md:max-w-[80%] md:text-xl">
               Your comprehensive library of ready-to-use UI components built
               with Next.js and Tailwind CSS. From simple buttons to complex
               layouts, MVPBlocks helps you create stunning interfaces with
@@ -49,7 +49,7 @@ export default function NotebookHero() {
             <div className="mb-6 flex flex-wrap gap-4 md:flex-row">
               <div className="flex items-center gap-2">
                 <svg
-                  className="text-primary h-5 w-5"
+                  className="h-5 w-5 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -60,13 +60,13 @@ export default function NotebookHero() {
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  ></path>
+                  />
                 </svg>
                 <span>100+ Components</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
-                  className="text-primary h-5 w-5"
+                  className="h-5 w-5 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -77,13 +77,13 @@ export default function NotebookHero() {
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  ></path>
+                  />
                 </svg>
                 <span>Dark & Light Mode</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
-                  className="text-primary h-5 w-5"
+                  className="h-5 w-5 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -94,13 +94,13 @@ export default function NotebookHero() {
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  ></path>
+                  />
                 </svg>
                 <span>Responsive Design</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
-                  className="text-primary h-5 w-5"
+                  className="h-5 w-5 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -111,7 +111,7 @@ export default function NotebookHero() {
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  ></path>
+                  />
                 </svg>
                 <span>Accessible Components</span>
               </div>
@@ -122,9 +122,9 @@ export default function NotebookHero() {
                 href="#"
                 className={cn(
                   buttonVariants({
-                    size: 'lg',
+                    size: "lg",
                     className:
-                      'from-primary to-primary/80 text-primary-foreground rounded-full bg-gradient-to-b',
+                      "rounded-full bg-gradient-to-b from-primary to-primary/80 text-primary-foreground",
                   }),
                 )}
               >
@@ -136,13 +136,13 @@ export default function NotebookHero() {
                 rel="noreferrer noopener"
                 className={cn(
                   buttonVariants({
-                    size: 'lg',
-                    variant: 'outline',
-                    className: 'bg-background rounded-full',
+                    size: "lg",
+                    variant: "outline",
+                    className: "rounded-full bg-background",
                   }),
                 )}
               >
-                GitHub{' '}
+                GitHub{" "}
                 <svg
                   className="ml-1 inline size-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -167,10 +167,10 @@ export default function NotebookHero() {
                 alt="MVPBlocks component library preview"
                 width={1000}
                 height={600}
-                className="animate-in fade-in slide-in-from-bottom-12 z-10 mx-auto -mb-60 w-full rounded-lg border-6 border-neutral-100 object-cover shadow-2xl duration-1000 select-none lg:-mb-40 dark:border-neutral-600"
+                className="fade-in slide-in-from-bottom-12 -mb-60 lg:-mb-40 z-10 mx-auto w-full animate-in select-none rounded-lg border-6 border-neutral-100 object-cover shadow-2xl duration-1000 dark:border-neutral-600"
               />
 
-              <div className="animate-in fade-in slide-in-from-left-4 absolute -top-6 -right-6 rotate-6 transform rounded-lg bg-white p-3 shadow-lg dark:bg-neutral-900">
+              <div className="fade-in slide-in-from-left-4 -top-6 -right-6 absolute rotate-6 transform animate-in rounded-lg bg-white p-3 shadow-lg dark:bg-neutral-900">
                 <div className="flex items-center gap-2">
                   <svg
                     className="h-5 w-5 text-green-500"
@@ -182,7 +182,7 @@ export default function NotebookHero() {
                       fillRule="evenodd"
                       d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                       clipRule="evenodd"
-                    ></path>
+                    />
                   </svg>
                   <span className="font-medium">Ready-to-Use Components</span>
                 </div>

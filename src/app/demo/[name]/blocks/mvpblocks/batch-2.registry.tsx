@@ -1,6 +1,10 @@
-/** Batch 2 of MVPBlocks registry exports */
+import {
+  SandboxLayout,
+  SandboxPreview,
+  SandboxProvider,
+} from "@/components/ui/shadcn-io/sandbox";
 import React from "react";
-import { SandboxProvider, SandboxLayout, SandboxPreview } from "@/components/ui/shadcn-io/sandbox";
+/** Batch 2 of MVPBlocks registry exports */
 
 // 11) pricing-2
 import PricingTwo from "@/components/mvpblocks/pricing-2";
